@@ -106,5 +106,6 @@ venv.bak/
 .mypy_cache/
 
 .gitignore
-.idea/vcs.xml
 templates/
+
+.idea/
