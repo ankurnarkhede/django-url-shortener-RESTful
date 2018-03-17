@@ -5,7 +5,7 @@ class url(models.Model):
     short_hash=models.CharField(max_length=9999)
     count=models.IntegerField()
     status=models.BooleanField()
-    created_at=models.DateTimeField()
+    created_at=models.DateTimeField(auto_now_add=True)
 
 
     def __str__(self):
