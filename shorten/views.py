@@ -18,6 +18,7 @@ class url_list(APIView):
 
     def get(self, request):
         # urls=url.objects.get(short_hash="qwertyui")
+        lol=request.path
         urls = url.objects.all()
         serializer=url_serializer(urls, many=True)
         return Response(serializer.data)
