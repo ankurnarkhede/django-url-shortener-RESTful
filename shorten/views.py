@@ -9,7 +9,7 @@ from .serializers import url_serializer
 class url_list(APIView):
     def get(self, request):
         print(self.request.query_params.get('short_hash'), self.request.query_params)
-        # shorted = self.request.GET.get('short_hash') # Ek min thamb. mala search karun pahu dekkkk
+        # shorted = self.request.GET.get('short_hash')
         shorted = self.request.query_params.get('short_hash')
         try:
             req_url = url.objects.get(short_hash=shorted)
